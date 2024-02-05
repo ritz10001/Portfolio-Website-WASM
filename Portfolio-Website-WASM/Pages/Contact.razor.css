@@ -1,0 +1,147 @@
+﻿
+
+.contact-paragraph {
+    margin-top: 10px;
+    /*margin: 0px 20px;*/
+}
+.contact-paragraph p{
+    display: flex;
+    justify-content: center;
+    padding: 0% 10%;
+    color: white;
+    font-size: 18px;
+}
+.contact-paragraph h5{
+    color: white;
+    font-size: 18px;
+    padding: 0px 10%;
+} 
+
+.social-icons a i:hover {
+    color: cyan;
+}
+
+.submit-button:hover {
+    background-color: black;
+    border-color: black;
+    color: red;
+}
+
+
+
+@media only screen and (min-width: 650px) and (orientation: landscape) {
+    .submit-button {
+        width: 110px;
+        height: 40px;
+    }
+
+    .name-field input, .email-field input, .phone-field input, .company-name-field input, .message-field textarea, .contact-method-field select {
+        width: 50%;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+    
+}
+
+@media only screen and (min-width: 650px) and (orientation: portrait) {
+    .submit-button {
+        width: 110px;
+        height: 40px;
+    }
+
+    .name-field input, .email-field input, .phone-field input, .company-name-field input, .message-field textarea, .contact-method-field select {
+        width: 50%;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+    }
+}
+
+
+
+@media only screen and (min-width: 350px) and (max-width: 649px) and (orientation: portrait) {
+    .name-field input, .email-field input, .phone-field input, .company-name-field input, .message-field textarea, .contact-method-field select {
+        width: 70%;
+    }
+
+    .social-icons a:nth-child(n):nth-child(-n+3) {
+        padding-right: 5%;
+        padding-left: 8%;
+        padding-bottom: 5%;
+        /*justify-content: space-between;*/
+    }
+    .social-icons a:nth-child(n+4):nth-child(-n+5) {
+        padding-left: 20%;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 349px) and (orientation: portrait) {
+    .name-field input, .email-field input, .phone-field input, .company-name-field input, .message-field textarea, .contact-method-field select {
+        width: 70%;
+    }
+
+    .social-icons a:nth-child(n):nth-child(-n+3) {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        /*justify-content: space-between;*/
+    }
+
+    .social-icons a:nth-child(n+4):nth-child(-n+5) {
+        padding-left: 17%;
+        padding-right: 5%;
+    }
+}
+
+
+.input-box {
+    /*border: 5px solid yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.name-field, .email-field, .phone-field, .company-name-field, .message-field, .contact-method-field, .submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.name-field input, .email-field input, .phone-field input, .company-name-field input, .message-field textarea, .contact-method-field select {
+    padding: 5px 0px 5px 10px;
+    background-color: #14213D;
+    border: 1.5px solid #FCA311;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.submit-button {
+    background-color: tomato;
+    border-radius: 20px;
+    border-color: tomato;
+}
+
+input::placeholder {
+    padding: 10px;
+}
+
+.message-field textarea::placeholder {
+    padding: 10px;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-icons a i {
+    font-size: 70px; 
+    color: tomato;
+}

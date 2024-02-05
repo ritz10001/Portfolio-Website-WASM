@@ -1,0 +1,47 @@
+/* Tablets, laptops, and above (LANDSCAPE ORIENTATION)*/
+@media only screen and (min-width: 650px) and (orientation: landscape) {
+    /*.card:hover .card-inner {
+        transform: rotateY(180deg);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    }*/
+
+
+    /*.card-back {
+        transform: rotateY(180deg);
+    }*/
+}
+
+/* Tablets, laptops, and above (PORTRAIT ORIENTATION)*/
+@media only screen and (min-width: 650px) and (orientation: portrait) {
+
+    
+
+    /*.card:hover .card-inner {
+        transform: rotateY(180deg);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    }*/
+    /*.card-back {
+        transform: rotateY(180deg);
+    }*/
+
+
+
+
+    
+}
+
+/* Phones */
+@media only screen and (max-width: 649px) and (orientation: portrait) {
+    
+
+    /*.card:hover .card-inner {
+        transform: rotateY(180deg);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    }*/
+
+    
+
+    /*.card-back {
+        transform: rotateY(180deg);
+    }*/
+}

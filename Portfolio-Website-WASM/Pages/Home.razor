@@ -1,0 +1,68 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+@* <head>
+    <link rel="stylesheet" href="AnimatedCard.razor.css"/>
+</head> *@
+
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+        border: 5px solid green;
+        /* background-color: #14213D; */
+        /*background: linear-gradient(cyan,#14213D); */
+       /*  background: linear-gradient(#2C005F,#A000A4); */
+        background: linear-gradient(#081b29,#112e42);
+    }
+
+    .homepagegeader{
+        
+        background-color: red;
+        
+    }
+</style>
+
+<br>
+
+
+
+<div class="sections">
+    <div class="left">
+        <h4>Hello, I am 👋 </h4>
+        <p class="name">Ritvik Prakash</p>
+        <p class="line">A Student From <a target="_blank" href="https://www.ttu.edu/">Texas Tech University</a> with a passion for <span style="color:gold">Software development.</span></p>
+        <button class="read-more-button">Read More About Me
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+            </svg>
+        </button>
+        <button class="contact-button">Contact Me
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+            </svg>
+        </button>
+        <button class="resume">
+            View My Resume
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
+            </svg>
+        </button>
+        
+    </div>
+    <div class="right">
+        <img src="../images/Screenshot (368).png" alt="">
+    </div>
+</div>
+
+<div class="social-icons">
+    <a href="https://www.linkedin.com/in/dhruv-khanna-b89772224/" target="_blank"><i class="fa fa-cloud" aria-hidden="true"></i></a>
+    <a href="https://github.com/Aquila69420" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:dk1g22@soton.ac.uk" target="_blank"><i class="fa fa-envelope"></i></a>
+</div>

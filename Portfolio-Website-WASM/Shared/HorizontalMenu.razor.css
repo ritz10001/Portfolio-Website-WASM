@@ -1,0 +1,29 @@
+﻿
+.menuTable, .menuButton {
+    position: static !important;
+    top: auto !important;
+}
+
+.menuButton {
+    border: 3px;
+    border-color: lightblue pink;
+    border-radius: 20px;
+    color: cyan;
+    background: #081b29;
+}
+
+.menuButton:hover{
+    color: white;
+}
+
+
+
+.menuTable {
+    /*margin-bottom: 30px;*/
+    width: 100vw;
+    height: 5vh;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+

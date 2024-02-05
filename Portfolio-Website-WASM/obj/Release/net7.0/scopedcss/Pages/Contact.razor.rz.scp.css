@@ -1,0 +1,147 @@
+
+
+.contact-paragraph[b-f7wm17smh1] {
+    margin-top: 10px;
+    /*margin: 0px 20px;*/
+}
+.contact-paragraph p[b-f7wm17smh1]{
+    display: flex;
+    justify-content: center;
+    padding: 0% 10%;
+    color: white;
+    font-size: 18px;
+}
+.contact-paragraph h5[b-f7wm17smh1]{
+    color: white;
+    font-size: 18px;
+    padding: 0px 10%;
+} 
+
+.social-icons a i:hover[b-f7wm17smh1] {
+    color: cyan;
+}
+
+.submit-button:hover[b-f7wm17smh1] {
+    background-color: black;
+    border-color: black;
+    color: red;
+}
+
+
+
+@media only screen and (min-width: 650px) and (orientation: landscape) {
+    .submit-button[b-f7wm17smh1] {
+        width: 110px;
+        height: 40px;
+    }
+
+    .name-field input[b-f7wm17smh1], .email-field input[b-f7wm17smh1], .phone-field input[b-f7wm17smh1], .company-name-field input[b-f7wm17smh1], .message-field textarea[b-f7wm17smh1], .contact-method-field select[b-f7wm17smh1] {
+        width: 50%;
+    }
+
+    .social-icons[b-f7wm17smh1] {
+        justify-content: space-around;
+    }
+    
+}
+
+@media only screen and (min-width: 650px) and (orientation: portrait) {
+    .submit-button[b-f7wm17smh1] {
+        width: 110px;
+        height: 40px;
+    }
+
+    .name-field input[b-f7wm17smh1], .email-field input[b-f7wm17smh1], .phone-field input[b-f7wm17smh1], .company-name-field input[b-f7wm17smh1], .message-field textarea[b-f7wm17smh1], .contact-method-field select[b-f7wm17smh1] {
+        width: 50%;
+    }
+
+    .social-icons[b-f7wm17smh1] {
+        justify-content: space-around;
+    }
+}
+
+
+
+@media only screen and (min-width: 350px) and (max-width: 649px) and (orientation: portrait) {
+    .name-field input[b-f7wm17smh1], .email-field input[b-f7wm17smh1], .phone-field input[b-f7wm17smh1], .company-name-field input[b-f7wm17smh1], .message-field textarea[b-f7wm17smh1], .contact-method-field select[b-f7wm17smh1] {
+        width: 70%;
+    }
+
+    .social-icons a:nth-child(n):nth-child(-n+3)[b-f7wm17smh1] {
+        padding-right: 5%;
+        padding-left: 8%;
+        padding-bottom: 5%;
+        /*justify-content: space-between;*/
+    }
+    .social-icons a:nth-child(n+4):nth-child(-n+5)[b-f7wm17smh1] {
+        padding-left: 20%;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 349px) and (orientation: portrait) {
+    .name-field input[b-f7wm17smh1], .email-field input[b-f7wm17smh1], .phone-field input[b-f7wm17smh1], .company-name-field input[b-f7wm17smh1], .message-field textarea[b-f7wm17smh1], .contact-method-field select[b-f7wm17smh1] {
+        width: 70%;
+    }
+
+    .social-icons a:nth-child(n):nth-child(-n+3)[b-f7wm17smh1] {
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+        /*justify-content: space-between;*/
+    }
+
+    .social-icons a:nth-child(n+4):nth-child(-n+5)[b-f7wm17smh1] {
+        padding-left: 17%;
+        padding-right: 5%;
+    }
+}
+
+
+.input-box[b-f7wm17smh1] {
+    /*border: 5px solid yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.name-field[b-f7wm17smh1], .email-field[b-f7wm17smh1], .phone-field[b-f7wm17smh1], .company-name-field[b-f7wm17smh1], .message-field[b-f7wm17smh1], .contact-method-field[b-f7wm17smh1], .submit[b-f7wm17smh1] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.name-field input[b-f7wm17smh1], .email-field input[b-f7wm17smh1], .phone-field input[b-f7wm17smh1], .company-name-field input[b-f7wm17smh1], .message-field textarea[b-f7wm17smh1], .contact-method-field select[b-f7wm17smh1] {
+    padding: 5px 0px 5px 10px;
+    background-color: #14213D;
+    border: 1.5px solid #FCA311;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.submit-button[b-f7wm17smh1] {
+    background-color: tomato;
+    border-radius: 20px;
+    border-color: tomato;
+}
+
+input[b-f7wm17smh1]::placeholder {
+    padding: 10px;
+}
+
+.message-field textarea[b-f7wm17smh1]::placeholder {
+    padding: 10px;
+}
+
+.social-icons[b-f7wm17smh1] {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-icons a i[b-f7wm17smh1] {
+    font-size: 70px; 
+    color: tomato;
+}

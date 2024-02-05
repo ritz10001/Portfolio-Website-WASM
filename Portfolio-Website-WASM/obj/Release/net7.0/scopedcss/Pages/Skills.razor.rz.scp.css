@@ -1,0 +1,394 @@
+
+@media only screen and (min-width: 1000px) and (orientation: landscape) {
+    .card-grid[b-ng9zcnlqwc] {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        /*justify-content: space-between;*/
+        align-items: center;
+        width: 100vw;
+    }
+
+    .card-grid-item[b-ng9zcnlqwc] {
+        height: auto;
+        flex-basis: 33%;
+    }
+
+    [b-ng9zcnlqwc] .card {
+        width: 90%;
+        height: auto;
+        /*padding: 10px;*/
+        margin: 50px auto;
+        background-color: #14213D;
+    }
+
+    [b-ng9zcnlqwc] .card-face {
+        width: 100%;
+        height: auto;
+        /*position: absolute;*/
+        backface-visibility: hidden;
+        display: flex;
+        /*justify-content: center;
+        align-items: center;*/
+        font-size: 90%;
+        background-color: #081b29;
+        border-radius: 6px;
+        border: 1px solid red;
+        padding-bottom: 5%;
+        transition: .5s;
+    }
+
+    [b-ng9zcnlqwc] .card-face:hover {
+        background-color: transparent;
+    }
+
+    [b-ng9zcnlqwc] .logo {
+        width: 25%;
+    }
+
+    [b-ng9zcnlqwc] .logo div svg{
+        width: 80%;
+        height: 80%;
+        margin: 0;
+        padding: 11% 0% 0% 15%;
+        color: blue;
+    }
+
+    [b-ng9zcnlqwc] .description {
+        width: 70%;
+        padding-left: 1%;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(1){
+        color: tomato;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+    [b-ng9zcnlqwc] .description p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+    [b-ng9zcnlqwc] .description p:nth-child(3) {
+        line-height: 15pt;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        padding-right: 10px;
+    }
+
+    [b-ng9zcnlqwc] .tech-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
+    [b-ng9zcnlqwc] .tech-buttons button {
+        height: 30px;
+        background-color: tomato;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 35px;
+        border-color: tomato;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 650px) and (orientation: portrait) {
+    .card-grid[b-ng9zcnlqwc] {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        /*justify-content: center;*/
+        align-items: flex-start;
+        /*height: 100vh;*/
+        width: 100vw;
+        /*overflow-y: auto;*/
+    }
+
+    .card-grid-item[b-ng9zcnlqwc] {
+        flex-basis: 50%;
+        width: 50vw;
+    }
+    [b-ng9zcnlqwc] .card {
+        width: 90%;
+        height: auto;
+        /*padding: 10px;*/
+        margin: 50px auto;
+        background-color: #14213D;
+    }
+
+    [b-ng9zcnlqwc] .card-face {
+        width: 100%;
+        height: auto;
+        /*position: absolute;*/
+        backface-visibility: hidden;
+        display: flex;
+        /*justify-content: center;
+        align-items: center;*/
+        font-size: 90%;
+        background-color: #081b29;
+        border-radius: 6px;
+        border: 1px solid red;
+        padding-bottom: 5%;
+        transition: .5s;
+    }
+
+    [b-ng9zcnlqwc] .card-face:hover {
+        background-color: transparent;
+    }
+
+    [b-ng9zcnlqwc] .logo {
+        width: 25%;
+    }
+
+    [b-ng9zcnlqwc] .logo div svg {
+        width: 80%;
+        height: 80%;
+        margin: 0;
+        padding: 11% 0% 0% 15%;
+        color: blue;
+    }
+
+    [b-ng9zcnlqwc] .description {
+        width: 70%;
+        padding-left: 1%;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(1) {
+        color: tomato;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(3) {
+        line-height: 15pt;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        padding-right: 10px;
+    }
+
+    [b-ng9zcnlqwc] .tech-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    [b-ng9zcnlqwc] .tech-buttons button {
+        height: 30px;
+        background-color: tomato;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 35px;
+        border-color: tomato;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 649.99px) and (orientation: portrait) {
+    .card-grid[b-ng9zcnlqwc] {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: flex-start;
+        height: 100%;
+        width: 100vw;
+    }
+
+    .card-grid-item[b-ng9zcnlqwc] {
+        width: 100vw;
+    }
+    [b-ng9zcnlqwc] .card {
+        width: 90%;
+        height: auto;
+        /*padding: 10px;*/
+        margin: 50px auto;
+        background-color: #14213D;
+    }
+
+    [b-ng9zcnlqwc] .card-face {
+        width: 100%;
+        height: auto;
+        /*position: absolute;*/
+        backface-visibility: hidden;
+        display: flex;
+        /*justify-content: center;
+        align-items: center;*/
+        font-size: 90%;
+        background-color: #081b29;
+        border-radius: 6px;
+        border: 1px solid red;
+        padding-bottom: 5%;
+        transition: .5s;
+    }
+
+    [b-ng9zcnlqwc] .card-face:hover {
+        background-color: transparent;
+    }
+
+    [b-ng9zcnlqwc] .logo {
+        width: 25%;
+    }
+
+    [b-ng9zcnlqwc] .logo div svg {
+        width: 80%;
+        height: 80%;
+        margin: 0;
+        padding: 11% 0% 0% 15%;
+        color: blue;
+    }
+
+    [b-ng9zcnlqwc] .description {
+        width: 70%;
+        padding-left: 1%;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(1) {
+        color: tomato;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(3) {
+        line-height: 15pt;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        padding-right: 10px;
+    }
+
+    [b-ng9zcnlqwc] .tech-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    [b-ng9zcnlqwc] .tech-buttons button {
+        height: 30px;
+        background-color: tomato;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 35px;
+        border-color: tomato;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 999.99px) and (orientation: landscape) {
+    .card-grid[b-ng9zcnlqwc] {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .card-grid-item[b-ng9zcnlqwc] {
+        height: auto;
+        flex-basis: 50%;
+    }
+    [b-ng9zcnlqwc] .card {
+        width: 90%;
+        height: auto;
+        /*padding: 10px;*/
+        margin: 50px auto;
+        background-color: #14213D;
+    }
+
+    [b-ng9zcnlqwc] .card-face {
+        width: 100%;
+        height: auto;
+        /*position: absolute;*/
+        backface-visibility: hidden;
+        display: flex;
+        /*justify-content: center;
+        align-items: center;*/
+        font-size: 90%;
+        background-color: #081b29;
+        border-radius: 6px;
+        border: 1px solid red;
+        padding-bottom: 5%;
+        transition: .5s;
+    }
+
+    [b-ng9zcnlqwc] .card-face:hover {
+        background-color: transparent;
+    }
+
+    [b-ng9zcnlqwc] .logo {
+        width: 25%;
+    }
+
+    [b-ng9zcnlqwc] .logo div svg {
+        width: 80%;
+        height: 80%;
+        margin: 0;
+        padding: 11% 0% 0% 15%;
+        color: blue;
+    }
+
+    [b-ng9zcnlqwc] .description {
+        width: 70%;
+        padding-left: 1%;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(1) {
+        color: tomato;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+
+    [b-ng9zcnlqwc] .description p:nth-child(3) {
+        line-height: 15pt;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        padding-right: 10px;
+    }
+
+    [b-ng9zcnlqwc] .tech-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    [b-ng9zcnlqwc] .tech-buttons button {
+        height: 30px;
+        background-color: tomato;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 35px;
+        border-color: tomato;
+        margin-right: 10px;
+    }
+}

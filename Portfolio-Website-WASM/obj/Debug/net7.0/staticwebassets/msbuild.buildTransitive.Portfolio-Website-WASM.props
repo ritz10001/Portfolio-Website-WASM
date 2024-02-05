@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Portfolio-Website-WASM.props" />
+</Project>

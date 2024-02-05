@@ -1,0 +1,37 @@
+@inject NavigationManager NavigationManager
+
+
+<nav class="menuTable">
+
+    <button class="menuButton" @onclick="() => LoadPage(1)">Home</button>
+    <button class="menuButton" @onclick="() => LoadPage(2)">Experience</button>
+    <button class="menuButton" @onclick="() => LoadPage(3)">Projects</button>
+    <button class="menuButton" @onclick="() => LoadPage(4)">Skills</button>
+    <button class="menuButton" @onclick="() => LoadPage(5)">Contact</button>
+
+</nav>
+
+
+
+@code
+{
+    private void LoadPage(int pageNumber) {
+        switch (pageNumber) {
+            case 1:
+                NavigationManager.NavigateTo("/", true);
+                break;
+            case 2:
+                NavigationManager.NavigateTo("/experience", true);
+                break;
+            case 3:
+                NavigationManager.NavigateTo("/projects", true);
+                break;
+            case 4:
+                NavigationManager.NavigateTo("/skills", true);
+                break;
+            case 5:
+                NavigationManager.NavigateTo("/contact", true);
+                break;
+        }
+    }
+}

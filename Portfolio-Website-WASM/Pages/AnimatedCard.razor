@@ -1,0 +1,56 @@
+
+<head>
+    <link rel="stylesheet" href="AnimatedCard.razor.css" />
+</head> 
+
+<script src="https://kit.fontawesome.com/5b30873dd8.js" crossorigin="anonymous"></script>
+
+
+
+<div class="card" >
+    <div class="card-inner">
+        <!-- Front side -->
+        <div class="card-face">
+           
+            <div class="timeline">
+                <p style="color: white">@TimeLine</p>
+                <div class="logo">
+                    <div style="font-size:10px">@((MarkupString)LanguageLogo)</div>
+                </div>
+            </div>
+            
+            <div class="description">
+                <p>@Title<span style="padding-left: 50px; font-size: 20px"><a href="https://github.com/ritz10001" target="_blank"><i class="fab fa-github"></i></a></span></p>
+                <p style="color: cyan">@Phrase</p>
+                <p style="color: white">@TextDescription</p>
+                <br>
+                <div class="tech-buttons">
+                    @foreach (var buttonText in TechButtons)
+                    {
+                        <button>@buttonText</button>
+                    }
+                </div>
+                <!-- Add more descriptions corresponding to each timeline point -->
+            </div>
+       
+        </div>
+
+        <!-- Back side -->
+        @* <div class="card-face card-back">
+            <p style="color: white">@BackText</p>
+        </div> *@
+    </div>
+</div>
+
+
+
+
+@code {
+    [Parameter] public string? Title { get; set; }
+    [Parameter] public string? Phrase { get; set; }
+    [Parameter] public string? TimeLine { get; set; }
+    [Parameter] public string? TextDescription { get; set; }
+    [Parameter] public List<string> TechButtons { get; set; } = new List<string>();
+    [Parameter] public string? LanguageLogo { get; set; }
+    // [Parameter] public string? BackText { get; set; }
+}

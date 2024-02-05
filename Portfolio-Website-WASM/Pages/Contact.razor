@@ -1,0 +1,139 @@
+@page "/contact"
+
+<PageTitle>Contact</PageTitle>
+
+<script src="https://kit.fontawesome.com/5b30873dd8.js" crossorigin="anonymous"></script> 
+
+<style>
+   /*  html, body {
+        margin: 0;
+        overflow-y: auto;
+    }
+
+    body{
+        border: 5px solid green;
+        
+    } */
+    /* html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+        border: 5px solid green;
+    } */
+    html{
+        /* border: 5px solid red; */
+        width: 100%;
+
+    }
+    html, body{
+        overflow-y: auto;
+        margin: 0;
+        height: 100%;
+        
+    }
+    body{
+        /* border: 5px solid green; */
+    }
+</style>
+<div class="form-class"> 
+    <form action="evaluate.php" method="get">
+        <div class="input-box">
+            <br>
+            <h1 style="text-align:center; color:white">Contact Me</h1>
+            <br>
+            <div class="contact-paragraph">
+                <p>
+                    Hello there! Thank you so much for taking the time to view my portfolio website!
+                    My email and phone number are listed below. If you wish to send me a personalized
+                    message, you can do so by filling the contact form below. Please scroll to the end
+                    of the page to view my social profiles, including my GitHub.<br><br> 
+                </p>
+                <h5>Email (General) : <span style="color:tomato; padding-left:10px">ritvik11prakash@gmail.com</span></h5>
+                <h5>Email (School) : <span style="color:tomato; padding-left:10px">rvailaya@ttu.edu</span></h5>
+                <h5>Phone : <span style="color:tomato; padding-left:10px">(806) 283-0861</span></h5>
+                <br>
+                <h1 style="text-align:center; color:white">Contact Form</h1>
+            </div>
+            <div class="name-field">
+
+                <input id="name" type="text" placeholder="Full Name" style="border-color: cyan; background-color: #081b29" required />
+            </div>
+            @* <div class="last-name-field">
+
+            <input id="last-name" type="text" placeholder="Last Name" style="border-color: cyan; background-color: #081b29" required />
+            </div> *@
+
+            <div class="email-field">
+
+                <input id="email" type="email" placeholder="Email" style="border-color: cyan; background-color: #081b29" required />
+            </div>
+            <div class="phone-field">
+
+                <input id="phonenumber" type="tel" placeholder="Phone Number" style="border-color: cyan; background-color: #081b29" />
+            </div>
+
+            <div class="contact-method-field">
+                <label for="contactmethod"></label>
+                <select id="contactmethod" onchange="TogglePhoneNumber" placeholder="Contact Method" style="border-color: cyan; background-color: #081b29; color:grey">
+                    <option value="" style="color:grey">Contact Method</option>
+                    <option value="Email" style="color:white">Email</option>
+                    <option value="Phone" style="color:white">Phone</option>
+                </select>
+            </div>
+
+            <div class="company-name-field">
+
+                <input id="companyname" type="text" style="border-color: cyan; background-color: #081b29" placeholder="Company Name" />
+            </div>
+            <div class="message-field">
+
+                <textarea id="message" placeholder="Message" style="border-color: cyan; background-color: #081b29" required></textarea>
+            </div>
+
+            <div class="submit">
+                <button class="submit-button" style="" type="submit">
+                    Submit
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        @* <div class="file-upload-button">
+        <label for="fileupload"><h5 style="font-weight:bold; color: white">Attach File</h5></label>
+        <input type="file" id="FileUpload" />
+        </div> *@
+        @*    <div class="submit-button">
+        <input type="submit" value="Submit" />
+        </div> *@
+        <br>
+
+
+    </form>
+    <br>
+    <h1 style="text-align:center; color: white">Explore my Profiles!</h1>
+    <br>
+    <br>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/ritvik-prakash-702872210/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/ritz10001" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:rvailaya@ttu.edu" target="_blank"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/ritz10001/" id="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMrlpwKGvthVQQRNksqSvstRMzDXXzkcpLmBLrsVXhPjtNgpCQchLTQLGJkzscZmkPhGwtQ" id="gmail" target="_blank" <i class="fa-brands fa-google"></i></a>
+    </div>
+    <br>
+    <br>
+
+</div>
+
+
+
+@* 
+TODO: Write function to make phone number required if user selects phone number as preferred form of contact 
+TODO: Write a function to process the form submission and send an email to me 
+*@
+@code {
+
+}

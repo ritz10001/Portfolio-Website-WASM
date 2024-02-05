@@ -1,0 +1,29 @@
+
+.menuTable[b-ietz2uyi0v], .menuButton[b-ietz2uyi0v] {
+    position: static !important;
+    top: auto !important;
+}
+
+.menuButton[b-ietz2uyi0v] {
+    border: 3px;
+    border-color: lightblue pink;
+    border-radius: 20px;
+    color: cyan;
+    background: #081b29;
+}
+
+.menuButton:hover[b-ietz2uyi0v]{
+    color: white;
+}
+
+
+
+.menuTable[b-ietz2uyi0v] {
+    /*margin-bottom: 30px;*/
+    width: 100vw;
+    height: 5vh;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+

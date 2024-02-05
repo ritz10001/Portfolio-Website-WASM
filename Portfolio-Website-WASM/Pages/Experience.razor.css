@@ -1,0 +1,373 @@
+﻿@media only screen and (min-width: 650px) and (orientation: landscape) {
+    .card-grid {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .edu-exp{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-grid-item {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    ::deep .logo div svg{
+        margin-left: 20%;
+        margin-top: 20%;
+    }
+
+    ::deep .card {
+        width: 75%;
+        height: auto;
+        /*padding: 10px;*/
+        margin: 20px 30px 50px 40px;
+        background-color: #14213D;
+    }
+
+   /* ::deep .card-inner {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s;
+        background: linear-gradient(#081b29,#112e42);
+    }*/
+
+    ::deep .card-face {
+        width: 100%;
+        height: auto;
+        /*position: absolute;*/
+        backface-visibility: hidden;
+        display: flex;
+        /*justify-content: center;
+        align-items: center;*/
+        font-size: 90%;
+        background-color: #081b29;
+        border-radius: 6px;
+        border: 1px solid red;
+        padding-bottom: 5%;
+        transition: .5s;
+    }
+
+    ::deep .card-face:hover {
+        background-color: transparent;
+    }
+
+    ::deep .timeline {
+        width: 20%;
+    }
+
+    ::deep .timeline p {
+        margin: 0;
+        padding: 11% 0px 0px 15%;
+        color: white;
+    }
+
+    ::deep .description {
+        width: 75%;
+        padding-left: 1%;
+    }
+
+    ::deep .description p:nth-child(1){
+        color: tomato;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+    ::deep .description p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+    ::deep .description p:nth-child(3) {
+        line-height: 15pt;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        padding-right: 10px;
+    }
+
+    ::deep .tech-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
+    ::deep .tech-buttons button {
+        height: 30px;
+        background-color: tomato;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 35px;
+        border-color: tomato;
+        margin-right: 10px;
+    }
+
+
+    
+    
+}
+
+@media only screen and (min-width: 650px) and (orientation: portrait) {
+    .card-grid {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .card-grid-item {
+        /*flex-basis: 37.5%;*/
+        width: 100vw;
+    }
+    .card-grid {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .edu-exp{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-grid-item {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    ::deep .logo div svg{
+        margin-left: 15%;
+        margin-top: 50%;
+        width: 70%;
+        height: 70%;
+    }
+
+    ::deep .card {
+        width: 75%;
+        height: auto;
+        /*padding: 10px;*/
+        margin: 20px 30px 50px 40px;
+        background-color: #14213D;
+    }
+
+    ::deep .card-face {
+        width: 100%;
+        height: auto;
+        /*position: absolute;*/
+        backface-visibility: hidden;
+        display: flex;
+        /*justify-content: center;
+        align-items: center;*/
+        font-size: 90%;
+        background-color: #081b29;
+        border-radius: 6px;
+        border: 1px solid red;
+        padding-bottom: 5%;
+        transition: .5s;
+    }
+
+    ::deep .card-face:hover {
+        background-color: transparent;
+    }
+
+    ::deep .timeline {
+        width: 20%;
+    }
+
+    ::deep .timeline p {
+        margin: 0;
+        padding: 11% 0px 0px 15%;
+        color: white;
+    }
+
+    ::deep .description {
+        width: 75%;
+        padding-left: 1%;
+    }
+
+    ::deep .description p:nth-child(1){
+        color: tomato;
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+    ::deep .description p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+    ::deep .description p:nth-child(3) {
+        line-height: 15pt;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        padding-right: 10px;
+    }
+
+    ::deep .tech-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
+    ::deep .tech-buttons button {
+        height: 30px;
+        background-color: tomato;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 35px;
+        border-color: tomato;
+        margin-right: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 649px) and (orientation: portrait) {
+    .card-grid {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .card-grid-item {
+        /*flex-basis: 37.5%;*/
+        width: 100vw;
+    }
+    .card-grid {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .edu-exp{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-grid-item {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    ::deep .logo div svg{
+        margin-left: 85%;
+        margin-top: -12%;
+        width: 12%;
+        height: 12%;
+    }
+    
+    ::deep .card {
+        width: 90vw;
+        height: auto;
+        /*padding: 10px;*/
+        margin: 50px 0px 30px 0px;
+        background-color: #14213D;
+    }
+
+    ::deep .card-face {
+        width: 100%;
+        height: auto;
+        /*position: absolute;*/
+        backface-visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;
+        align-items: center;*/
+        font-size: 90%;
+        background-color: #081b29;
+        border-radius: 6px;
+        border: 1px solid red;
+        padding-bottom: 5%;
+        transition: .5s;
+    }
+
+    ::deep .card-face:hover {
+        background-color: transparent;
+    }
+
+    ::deep .timeline {
+        height: 10%;
+    }
+
+    ::deep .timeline p {
+        /*padding: 20% 0% 0% 15%;*/
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 0%;
+        color: white;
+    }
+
+    ::deep .description {
+        /*margin-top: -10%;*/
+        /*width: 75%;*/
+        padding-left: 5%;
+    }
+
+    ::deep .description p span a i{
+        display: none;
+        pointer-events: none;
+    }
+    ::deep .description p:nth-child(1){
+        color: tomato;
+        font-size: 16px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+    ::deep .description p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding: 0px;
+    }
+    ::deep .description p:nth-child(3) {
+        line-height: 15pt;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        padding-right: 10px;
+    }
+
+    ::deep .tech-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+
+    ::deep .tech-buttons button {
+        height: 30px;
+        background-color: tomato;
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 35px;
+        border-color: tomato;
+        margin-right: 10px;
+    }
+}
+

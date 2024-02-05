@@ -1,0 +1,93 @@
+@page "/projects"
+
+<PageTitle>Projects</PageTitle>
+
+<head>
+    <link rel="stylesheet" href="Projects.razor.css" />
+</head>
+
+<style>
+    html, body {
+        /*height: 100vh;*/
+        margin: 0;
+        overflow-y: auto;
+    }
+
+
+    body {
+        border: 5px solid green;
+    }
+
+
+</style>
+<br>
+<h2 style="text-align:center; color: white">My Experience</h2>
+<div class="card-grid">
+    <div class="card-grid-item">
+        @{
+            var techButtons = new List<string> { "Python", "PyQt", "JSON", "Web Scraping", "OOP" };
+            var techButtons2 = new List<string> { "C#", "ASP.NET Core", "Entity Framework", "Web API", "SwaggerUI", "SQL Server" };
+            var techButtons3 = new List<string> { "C#", "Minimax Algorithm", "OOP Principles", "Game Theory" };
+            var techButtons4 = new List<string> { "Unity Game Engine", "C#", "Game Elements Design", "Unity ProBuilder", "Scripting" };
+            var techButtons5 = new List<string> { "Python", "String Manipulation", "OOP Design" };
+            var techButtons6 = new List<string> { "Python", "Backtracking", "Algorithms", "OOP" };
+
+
+        }
+        <AnimatedCard TextDescription="Weather Mine is a weather application developed in Python 
+        that features a PyQt based GUI. It leverages object oriented programming principles
+        such as classes and inheritance for the software structure and design. 
+        The program utilizes an API to retrieve real-time weather data using web scraping and HTTP GET requests.
+        The data, that comes in  JSON format, is parsed efficiently using Hashmaps. It showscases
+        a strong command of both backend data manipulation and frontend GUI design.
+        " Title="WeatherMine" Phrase="Desktop GUI Weather Application" TimeLine="Mar - Apr 2022"
+        TechButtons="@techButtons" LanguageLogo='<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+<path fill="#0277BD" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#FFC107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
+</svg>'/>
+    </div>
+    <div class="card-grid-item">
+        <AnimatedCard TextDescription="Designed a dynamic CRUD application using ASP.NET Core Razor Pages, along with complete and comprehensive API documentation with Swagger UI and Web API. 
+        Leveraging Entity Framework Core and SQL Server, the application manages job and internship applications with intricate relationships, including one-to-many and many-to-many associations. 
+        The feature-rich system allows seamless addition, update, deletion, and editing of jobs, companies, and associated skills. 
+        Further, it boasts a user-friendly search functionality for efficient data retrieval.." Title="Job Application Tracker" Phrase="CRUD Application" TimeLine="Jan 2024 - Present"
+        TechButtons="@techButtons2" LanguageLogo='<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+<path fill="#6a1b9a" d="M44,24c0,5.694-2.381,10.831-6.2,14.481l-0.006,0.006C34.2,41.9,29.344,44,24,44 C12.956,44,4,35.044,4,24c0-5.338,2.087-10.188,5.5-13.775c0.006-0.013,0.013-0.019,0.019-0.025C13.169,6.381,18.306,4,24,4 C35.044,4,44,12.956,44,24z"></path><path fill="#7b1fa2" d="M38.375,37.862c-0.187,0.213-0.381,0.419-0.575,0.619l-0.006,0.006C34.2,41.9,29.344,44,24,44 C12.956,44,4,35.044,4,24c0-5.338,2.087-10.188,5.5-13.775c0.006-0.013,0.013-0.019,0.019-0.025c0.2-0.194,0.406-0.387,0.619-0.575 L38.375,37.862z"></path><path fill="#fff" d="M8.626,27.281c-0.236,0.004-0.463-0.091-0.625-0.262c-0.167-0.165-0.259-0.39-0.256-0.625 c-0.002-0.234,0.091-0.459,0.256-0.625c0.161-0.174,0.388-0.272,0.625-0.269c0.237-0.001,0.463,0.097,0.625,0.269 c0.169,0.164,0.263,0.39,0.262,0.625c0.002,0.236-0.093,0.462-0.262,0.625C9.087,27.188,8.861,27.283,8.626,27.281z"></path><path fill="#fff" d="M21.044,27.125h-1.638l-5.856-9.087c-0.146-0.224-0.267-0.463-0.363-0.712h-0.05 c0.056,0.519,0.077,1.041,0.062,1.562v8.237h-1.331V15.731h1.731l5.7,8.925c0.237,0.371,0.392,0.625,0.462,0.763h0.031 c-0.066-0.556-0.093-1.115-0.081-1.675v-8.012h1.331V27.125z"></path><path fill="#fff" d="M30.057,27.125h-6.056V15.731h5.775v1.206h-4.412v3.788h4.113v1.2h-4.113v3.95h4.7L30.057,27.125z"></path><path fill="#fff" d="M39.001,16.938h-3.312v10.188h-1.331V16.938h-3.275v-1.206h7.919V16.938z"></path><path fill="#f2f2f2" d="M20.326,34.875c-0.451,0.219-0.949,0.324-1.45,0.306c-0.674,0.03-1.327-0.232-1.794-0.719 c-0.459-0.514-0.701-1.186-0.675-1.875c-0.034-0.754,0.239-1.489,0.756-2.038c0.505-0.517,1.203-0.798,1.925-0.775 c0.427-0.015,0.853,0.06,1.25,0.219v0.625c-0.382-0.212-0.813-0.319-1.25-0.312c-0.557-0.016-1.094,0.213-1.469,0.625 c-0.39,0.444-0.592,1.022-0.562,1.612c-0.029,0.559,0.159,1.108,0.525,1.531c0.355,0.382,0.86,0.59,1.381,0.569 c0.48,0.013,0.954-0.109,1.369-0.35L20.326,34.875z"></path><path fill="#f2f2f2" d="M22.882,35.181c-0.503,0.016-0.989-0.187-1.331-0.556c-0.342-0.381-0.519-0.882-0.494-1.394 c-0.032-0.541,0.155-1.073,0.519-1.475c0.371-0.362,0.876-0.555,1.394-0.531c0.49-0.026,0.967,0.163,1.306,0.519 c0.332,0.4,0.5,0.912,0.469,1.431c0.026,0.527-0.156,1.043-0.506,1.438C23.89,34.989,23.395,35.197,22.882,35.181z M22.926,31.762 c-0.348-0.015-0.684,0.13-0.912,0.394c-0.24,0.31-0.36,0.696-0.338,1.088c-0.022,0.38,0.098,0.754,0.338,1.05 c0.231,0.26,0.566,0.402,0.912,0.388c0.34,0.02,0.67-0.118,0.894-0.375c0.227-0.31,0.338-0.691,0.312-1.075 c0.025-0.386-0.086-0.768-0.312-1.081C23.599,31.888,23.268,31.745,22.926,31.762z"></path><path fill="#f2f2f2" d="M27.663,31.95c-0.135-0.088-0.295-0.13-0.456-0.119c-0.256,0.009-0.49,0.145-0.625,0.363 c-0.186,0.295-0.276,0.64-0.256,0.988v1.912h-0.625v-3.75h0.625v0.781l0,0c0.069-0.242,0.205-0.459,0.394-0.625 c0.163-0.141,0.372-0.219,0.587-0.219c0.121-0.005,0.242,0.012,0.356,0.05V31.95z"></path><path fill="#f2f2f2" d="M31.326,33.375h-2.644c-0.018,0.349,0.096,0.693,0.319,0.963c0.234,0.234,0.557,0.356,0.887,0.338 c0.424-0.004,0.833-0.152,1.163-0.419v0.562c-0.386,0.255-0.844,0.38-1.306,0.356c-0.472,0.024-0.93-0.164-1.25-0.513 c-0.325-0.406-0.488-0.918-0.456-1.438c-0.022-0.52,0.154-1.03,0.494-1.425c0.313-0.362,0.772-0.564,1.25-0.55 c0.432-0.024,0.851,0.151,1.138,0.475c0.288,0.379,0.43,0.85,0.4,1.325L31.326,33.375z M30.701,32.869 c0.013-0.29-0.076-0.575-0.25-0.806c-0.173-0.196-0.426-0.302-0.688-0.288c-0.272-0.003-0.533,0.108-0.719,0.306 c-0.206,0.218-0.335,0.496-0.369,0.794L30.701,32.869z"></path>
+</svg>'/>
+    </div>
+    <div class="card-grid-item">
+        <AnimatedCard TextDescription="Developed a terminal-based Tic Tac Toe game in C# featuring two modes: normal, which just uses random selection, and challenging with an unbeatable AI powered by the minimax algorithm. 
+        Incorporating object-oriented programming principles, the game employs classes and inheritance for a structured design. The AI strategically evaluates all 255,168 possible combinations/states (at the initial stage) to make optimal moves, ensuring a competitive edge throughout the game until a decisive win or a draw is achieved. 
+        An enhanced alpha-beta pruned version is under development." Title="Tic-Tac-Toe with Unbeatable AI" Phrase="Terminal Based Tic-Tac-Toe with CPU" TechButtons="@techButtons3" LanguageLogo='<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+<path fill="#37474f" fill-rule="evenodd" d="M22.903,3.286c0.679-0.381,1.515-0.381,2.193,0 c3.355,1.883,13.451,7.551,16.807,9.434C42.582,13.1,43,13.804,43,14.566c0,3.766,0,15.101,0,18.867 c0,0.762-0.418,1.466-1.097,1.847c-3.355,1.883-13.451,7.551-16.807,9.434c-0.679,0.381-1.515,0.381-2.193,0 c-3.355-1.883-13.451-7.551-16.807-9.434C5.418,34.899,5,34.196,5,33.434c0-3.766,0-15.101,0-18.867 c0-0.762,0.418-1.466,1.097-1.847C9.451,10.837,19.549,5.169,22.903,3.286z" clip-rule="evenodd"></path><path fill="#546e7a" fill-rule="evenodd" d="M5.304,34.404C5.038,34.048,5,33.71,5,33.255 c0-3.744,0-15.014,0-18.759c0-0.758,0.417-1.458,1.094-1.836c3.343-1.872,13.405-7.507,16.748-9.38 c0.677-0.379,1.594-0.371,2.271,0.008c3.343,1.872,13.371,7.459,16.714,9.331c0.27,0.152,0.476,0.335,0.66,0.576L5.304,34.404z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M24,10c7.727,0,14,6.273,14,14s-6.273,14-14,14 s-14-6.273-14-14S16.273,10,24,10z M24,17c3.863,0,7,3.136,7,7c0,3.863-3.137,7-7,7s-7-3.137-7-7C17,20.136,20.136,17,24,17z" clip-rule="evenodd"></path><path fill="#455a64" fill-rule="evenodd" d="M42.485,13.205c0.516,0.483,0.506,1.211,0.506,1.784 c0,3.795-0.032,14.589,0.009,18.384c0.004,0.396-0.127,0.813-0.323,1.127L23.593,24L42.485,13.205z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M34 20H35V28H34zM37 20H38V28H37z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M32 25H40V26H32zM32 22H40V23H32z" clip-rule="evenodd"></path>
+</svg>' />
+    </div>
+    <div class="card-grid-item">
+        <AnimatedCard TextDescription="'Office Dungeon,' is a captivating Unity Engine game that combines the challenge of a maze with the corporate world. 
+        You get to navigate through office-themed environments, including tables, washrooms, and various intriguing elements, striving to escape within time limits as difficulty escalates across three engaging levels. 
+        The game boasts multiple floors in some levels, making it harder to find your way out. 
+        Comes with a user-friendly start menu and customizable settings, 'Office Dungeon' promises an immersive experience, with the potential for additional levels in the future." Title="Office Dungeon PC Game" Phrase="3D Unity Engine Based Game" TechButtons="@techButtons4" LanguageLogo='<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 64 64">
+<linearGradient id="k4Wi0sDN9ImZC~anEGVOCa_55O6KKA9CyIA_gr1" x1="29.399" x2="29.399" y1="21.083" y2="44.334" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><polygon fill="url(#k4Wi0sDN9ImZC~anEGVOCa_55O6KKA9CyIA_gr1)" points="33,31 38.706,19.782 27.919,21.758 20.093,31"></polygon><linearGradient id="k4Wi0sDN9ImZC~anEGVOCb_55O6KKA9CyIA_gr2" x1="41.474" x2="41.474" y1="21.083" y2="44.334" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><polygon fill="url(#k4Wi0sDN9ImZC~anEGVOCb_55O6KKA9CyIA_gr2)" points="42.467,22.128 37,33 43.193,42.524 45.948,32.313"></polygon><linearGradient id="k4Wi0sDN9ImZC~anEGVOCc_55O6KKA9CyIA_gr3" x1="29.976" x2="29.976" y1="21.083" y2="44.334" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#6dc7ff"></stop><stop offset="1" stop-color="#e6abff"></stop></linearGradient><polygon fill="url(#k4Wi0sDN9ImZC~anEGVOCc_55O6KKA9CyIA_gr3)" points="20.422,35 28.735,43.181 39.53,44.825 33,35"></polygon><linearGradient id="k4Wi0sDN9ImZC~anEGVOCd_55O6KKA9CyIA_gr4" x1="29.834" x2="30.211" y1="7.965" y2="57.379" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#1a6dff"></stop><stop offset="1" stop-color="#c822ff"></stop></linearGradient><path fill="url(#k4Wi0sDN9ImZC~anEGVOCd_55O6KKA9CyIA_gr4)" d="M47.458,55.001c-0.115,0-0.233-0.01-0.354-0.032l-17.443-2.998	c-0.681-0.116-1.262-0.587-1.519-1.228L26.646,47h-5.063c-0.514,0-1.003-0.195-1.377-0.551L7.62,34.447	c-0.785-0.747-0.826-2.005-0.09-2.804l12.001-13.001C19.908,18.234,20.443,18,21,18h4.646l1.496-3.743	c0.239-0.598,0.756-1.047,1.383-1.201l16.417-4c0.984-0.234,2.029,0.333,2.361,1.284l5.585,16.001	c0.174,0.503,0.145,1.041-0.082,1.518l-2.539,4.31l2.411,3.518c0.298,0.486,0.385,1.007,0.275,1.512l-3.543,16.229	C49.213,54.339,48.392,55.001,47.458,55.001z M47.457,53.001l0.001,1L47.457,53.001C47.458,53.001,47.458,53.001,47.457,53.001z M28.898,47.248L30,50.001L47.457,53L51,36.771l-1.517-2.211l-3.715,13.758l-9.92-15.255l8.657-17.216l4.816,13.986l1.72-2.913	l-5.627-15.922l-16.415,4l-1.076,2.69l14.301-2.62L33.613,32H14.011l10.156-12H21L9,33l12.584,12h3.301L13.729,34h19.808	L43.83,49.49L28.898,47.248z M28.038,45.096l11.632,1.748L32.464,36H18.605l9.128,9l0.142,0.063L28.038,45.096z M38.151,32.937	l6.854,10.538l2.992-11.082l0.019-0.158l-0.028-0.137L44.16,20.986L38.151,32.937z M18.323,30h14.063l6.223-12.235l-11.754,2.154	L18.323,30z"></path>
+</svg>'/>
+    </div>
+    <div class="card-grid-item">
+        <AnimatedCard TextDescription="Mathology is a robust math-centric library initiated last December in collaboration with a friend. 
+This comprehensive resource incorporates various mathematical subjects, offering diverse functions and operations, including algebra, equations, trigonometry, and geometry. 
+With an emphasis on extensive string manipulation and grounded in object-oriented programming concepts, 'Mathology' explores topics such as basic trigonometry, sets, probability, linear equations, linear algebra, and vectors." Title="Mathology" Phrase="Python based Math Library" TechButtons="@techButtons5" LanguageLogo='<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+<path fill="#0277BD" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#FFC107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
+</svg>'/>
+    </div>
+    <div class="card-grid-item">
+        <AnimatedCard TextDescription="Sudoku Mastermind is a Python-based sudoku puzzle generator and solver that offers users the choice to either solve a randomly generated sudoku board or witness a rapid CPU-solving experience. The application harnesses a very powerful backtracking (recursive) algorithm, enabling the CPU to solve any sudoku board in a matter of seconds. Whether you're keen on challenging your puzzle-solving skills or observing the efficiency of the algorithm, 'Sudoku Mastermind' provides an engaging and dynamic experience." Title="Sudoku Mastermind" Phrase="Python based Sudoku Solver" TechButtons="@techButtons6" LanguageLogo='<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+<path fill="#0277BD" d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z"></path><path fill="#FFC107" d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z"></path>
+</svg>'/>
+    </div>
+    <div class="card-grid-item">
+        <AnimatedCard TextDescription="yet to be added" />
+    </div>
+    <div class="card-grid-item">
+        <AnimatedCard TextDescription="yet to be added" />
+    </div>
+   @*  <div class="card-grid-item">
+        <AnimatedCard FrontText="Gaand" BackText="Mein Danda" />
+    </div> *@
+</div>
